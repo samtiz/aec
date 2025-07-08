@@ -19,7 +19,7 @@ wasm-bindgen = { version = "0.2.99" }
 
 [lib]
 # For wasm
-crate-type = ["cdylib", "rlib"]
+crate-type = ["cdylib", "staticlib"]
 
 [dev-dependencies]
 hound = { version = "3.5.1" }
