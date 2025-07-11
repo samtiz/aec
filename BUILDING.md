@@ -136,7 +136,7 @@ Ensure you have Rust, Cargo, and the Emscripten SDK (`emcc`) installed and activ
       -sMODULARIZE=1 \
       -sEXPORT_NAME="createAecModule" \
       -sEXPORTED_FUNCTIONS='["_AecNew","_AecCancelEcho","_AecDestroy","_malloc","_free"]' \
-      -sEXPORTED_RUNTIME_METHODS='["ccall","cwrap"]' \
+      -sEXPORTED_RUNTIME_METHODS='["ccall","cwrap","HEAPU8","HEAP16"]' \
       -o aec.js
     ```
     This command will generate a single, self-contained `aec.js` file in the `link` directory.
